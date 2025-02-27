@@ -10,45 +10,62 @@
         <title>ISATNET</title>
     </head>
 
-    <body class="text-[#595959] font-[inter]">
-        <nav class="max-w-6xl mx-auto flex justify-between items-center py-3 mb-16">
-            <div class="flex items-center gap-8">
+    <body class="text-gray-main font-[inter]">
+
+        <nav class="navbar mb-10 relative">
+            <div class="navbar-logo">
                 <img src="src/img/nav-logo-isatnet.svg" alt="">
 
-                <ul class="flex gap-5">
+                <ul class="navbar-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="service.html">Services</a></li>
-                    <li><a href="product-business.html">Product</a></li>
-                    <li><a href="product-home.html">Projects</a></li>
+                    <li class="dropdown-btn flex items-center gap-1.5">
+                        <a href="#">Product</a>
+                        <img src="src/img/icon-arrow-dropdown.svg" alt="">
+                    </li>
+                    <li><a href="#">Projects</a></li>
                 </ul>
             </div>
 
             <div class="flex items-center gap-5">
                 <a href="about.html">Contact Us</a>
-                <a href="index.html" class="py-3 px-5 border-2 border-[#00C7A8] text-[#00C7A8] rounded-full inline-block w-fit text-sm">Get Started</a>
+                <a href="index.html" class="button-outlined">Get Started</a>
 
-                <button class="flex items-center gap-3 border-l-1 border-[#595959cb] pl-3">
-                    EN <img src="src/img/nav-icon-global-line.svg" alt="" class="bg-[#CFF2EC] p-1 rounded-full">
+                <button class="navbar-language">
+                    EN <img src="src/img/nav-icon-global-line.svg" alt="" class="bg-secondary p-1 rounded-full">
                 </button>
             </div>
         </nav>
 
+        <section class="dropdown-menu absolute top-15 left-0 right-0 bg-white p-12 w-full hidden shadow-md">
+            <div class="max-w-6xl mx-auto grid grid-cols-2 gap-16">
+                <div>
+                    <p class="mb-2">ISATNET at Home</p>
+                    <a href="product-home.html"><img src="src/img/home-isatnet-home-card.jpg" alt=""></a>
+                </div>
+                <div>
+                    <p class="mb-2">ISATNET Business</p>
+                    <a href="product-business.html"><img src="src/img/home-isatnet-business-card.jpg" alt=""></a>
+                </div>
+            </div>
+        </section>
+
         <section class="grid grid-cols-2 max-w-6xl mx-auto gap-16">
             <div>
-                <h1 class="text-6xl font-medium whitespace-nowrap mb-10">
+                <h1 class="text-6xl font-medium whitespace-nowrap mb-10 text-dark">
                     Solusi Internet Terbaik
                     <span class="block font-semibold text-[#00C7A8]">#denganISATNET</span>
                 </h1>
 
-                <p class="leading-relaxed mb-7">
+                <p class="section-content">
                     Nikmati koneksi internet cepat dan stabil tanpa hambatan
                     <span class="block">untuk kebutuhan keluarga dan bisnis Anda. Jadilah bagian </span>
                     dari solusi digital terbaik sekarang!
                 </p>
 
-                <a href="#" class="py-3 px-7 inline-block w-fit bg-[linear-gradient(274deg,_#00C7A8_0%,_#88E6B6_100%)] text-white rounded-full">
-                    Get Started
+                <a href="#" class="py-2 px-4 w-fit bg-[linear-gradient(274deg,_#00C7A8_0%,_#88E6B6_100%)] text-white rounded-full flex items-center gap-4">
+                    Get Started <img src="src/img/icon-arrow.svg" alt="" class="bg-white rounded-full p-1.5">
                 </a>
             </div>
 
@@ -56,7 +73,7 @@
         </section>
 
         <section class="max-w-6xl mx-auto my-16">
-            <h2 class="text-3xl text-center font-medium">
+            <h2 class="section-title text-center">
                 Connecting you globally with 15+ years of expertise in 
                 <span class="block">broadband, fiber, and seamless data transfer.</span>
             </h2>
@@ -95,45 +112,47 @@
         <section class="max-w-6xl mx-auto grid grid-cols-2 gap-16 my-16">
             <img src="src/img/home-services.jpg" alt="" class="w-full">
             <div class="flex flex-col justify-center">
-                <p class="text-xl font-semibold mb-5">
+                <p class="section-title">
                     Insert short heading about what we do and services that the company offers
                 </p>
 
-                <p class="mb-10 leading-relaxed">
+                <p class="section-content">
                     Nikmati koneksi internet cepat dan stabil tanpa hambatan untuk kebutuhan keluarga dan bisnis Anda. Jadilah bagian dari solusi digital terbaik sekarang!
                 </p>
 
-                <a href="#" class="py-3 px-8 bg-[#2C2C2C] text-white rounded-full inline-block w-fit text-sm">Our Services</a>
+                <a href="#" class="button">Our Services</a>
             </div>
         </section>
 
         <section class="max-w-7xl mx-auto bg-[#FAFAFA] my-16">
             <div class="max-w-6xl mx-auto py-10">
-                <div class="flex justify-between mb-10">
-                    <p class="text-2xl font-semibold">Our Product Range</p>
-                    <p class="text-[#595959]">
+                <div class="flex justify-between mb-5">
+                    <p class="section-title">Our Product Range</p>
+                    <p class="section-content">
                         Nikmati koneksi internet cepat dan stabil tanpa hambatan untuk 
-                        <span class="block">kebutuhan keluarga dan bisnis Anda. Jadilah bagian dari solusi digital </span>
+                        <span class="block">
+                            kebutuhan keluarga dan bisnis Anda. Jadilah bagian dari solusi digital 
+                        </span>
                         terbaik sekarang!
                     </p>
                 </div>
 
                 <div class="grid grid-cols-2 gap-10">
-                    <div class="bg-white items-center">
+                    <div class="bg-white items-center rounded-lg">
                         <img src="src/img/home-isatnet-home-card.jpg" alt="">
                         <div class="flex flex-col p-6">
-                            <p class="font-medium text-xl">ISATNET at Home</p>
+                            <p class="card-title">ISATNET at Home</p>
                             <p>Experience fast, reliable internet designed for families, ensuring smooth streaming, gaming, and browsing to staying connected.</p>
-                            <a href="#" class="py-3 px-8 bg-[#2C2C2C] text-white rounded-full inline-block w-fit text-sm mt-5">More Info</a>
+                            <a href="#" class="button-sm">Learn More</a>
                         </div>
                     </div>
 
-                    <div class="bg-white items-center">
+                    <div class="bg-white items-center rounded-lg">
                         <img src="src/img/home-isatnet-business-card.jpg" alt="">
                         <div class="flex flex-col p-6">
-                            <p class="font-medium text-xl">ISATNET Business</p>
+                            <p class="card-title">ISATNET Business</p>
                             <p>Experience fast, reliable internet designed for families, ensuring smooth streaming, gaming, and browsing to staying connected.</p>
-                            <a href="#" class="py-3 px-8 bg-[#2C2C2C] text-white rounded-full inline-block w-fit text-sm mt-5">More Info</a>
+                            <a href="#" class="button-sm">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -142,23 +161,23 @@
 
         <section class="max-w-6xl mx-auto grid grid-cols-2 gap-16 my-16">
             <div class="flex flex-col justify-center">
-                <p class="text-xl font-semibold mb-5">
+                <p class="section-title">
                     Insert short heading about what we do and services that the company offers
                 </p>
 
-                <p class="mb-10 leading-relaxed">
+                <p class="section-content">
                     Nikmati koneksi internet cepat dan stabil tanpa hambatan untuk kebutuhan keluarga dan bisnis Anda. Jadilah bagian dari solusi digital terbaik sekarang!
                 </p>
 
-                <a href="#" class="py-3 px-8 bg-[#2C2C2C] text-white rounded-full inline-block w-fit text-sm">See All Projects</a>
+                <a href="#" class="button">See All Projects</a>
             </div>
 
             <img src="src/img/home-projects.jpg" alt="" class="w-full">
         </section>
 
-        <section class="w-full my-16">
+        <section class="max-w-6xl mx-auto my-16">
             <div class="max-w-6xl mx-auto text-center">
-                <h2 class="text-3xl font-medium mt-20 mb-5">Our Offer</h2>
+                <h2 class="section-title">Our Offer</h2>
             </div>
 
             <div class="flex justify-center  gap-5">
@@ -168,7 +187,9 @@
             </div>
         </section>
 
-        <section class="footer bg-white w-full text-base text-[#595959]">
+        <img src="src/img/subscribe.png" alt="" class="w-full max-w-6xl mx-auto">
+
+        <section class="footer bg-white w-full text-base">
             <!-- Footer Container -->
             <div class="max-w-6xl mx-auto grid grid-cols-3 justify-items-center py-10">
                 <!-- Contact & Address -->
@@ -228,5 +249,7 @@
                 </div>
             </div>
         </section>
+
+        <script src="script.js"></script>
     </body>
 </html>
