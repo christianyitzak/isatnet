@@ -5,20 +5,21 @@
     --color-secondary: #CFF2EC;
     --color-dark: #2C2C2C;
     --color-gray-main: #595959;
+    --color-white-main: #FAFAFA;
 }
 
 @layer components {
     /* Navigation */
     .navbar {
-        @apply max-w-6xl mx-auto flex justify-between items-center py-3 text-sm
+        @apply max-w-6xl mx-auto flex justify-between items-center py-3 text-sm text-gray-main mb-20
     }
 
     .navbar-logo {
-        @apply flex items-center gap-8;
+        @apply flex items-center gap-12;
     }
 
     .navbar-links {
-        @apply flex gap-5;
+        @apply flex gap-8;
     }
 
     .navbar-language {
@@ -27,7 +28,7 @@
 
     /* Button */
     .button {
-        @apply py-3 px-7 bg-dark text-white rounded-full inline-block w-fit text-sm
+        @apply py-3 px-10 bg-dark text-white rounded-full inline-block w-fit text-sm
     }
 
     .button-outlined {
@@ -35,20 +36,76 @@
     }
 
     .button-sm {
-        @apply py-2 px-4 bg-dark text-white rounded-full inline-block w-fit text-sm mt-2.5
+        @apply py-2 px-5 bg-dark text-white rounded-full inline-block w-fit text-sm mt-2.5
+    }
+
+    .button-primary {
+        @apply py-2 px-4 w-fit bg-[linear-gradient(274deg,_#00C7A8_0%,_#88E6B6_100%)] text-white rounded-full flex items-center gap-4
     }
 
     /* Section */
+    .section-max-w-6xl {
+        @apply max-w-6xl mx-auto mb-20
+    }
+
+    .section-max-w-7xl {
+        @apply max-w-7xl mx-auto mb-20
+    }
+
+    .section-main-title {
+        @apply text-6xl font-medium whitespace-nowrap mb-10 text-dark
+    }
+
     .section-title {
-        @apply text-2xl font-semibold mb-5 text-dark
+        @apply text-3xl font-semibold mb-8 text-dark
     }
 
     .section-content {
-        @apply text-gray-main text-base leading-relaxed mb-10 text-dark
+        @apply text-base leading-relaxed mb-12 text-dark
     }
 
     /* Cards */
+    .card-container {
+        @apply rounded-lg bg-white
+    }
+
     .card-title {
         @apply font-semibold text-xl text-dark mb-1.5
+    }
+
+    .card-content {
+        @apply text-gray-main
+    }
+
+    /* Stats */
+    .stats-image {
+        @apply h-20 mb-5
+    }
+
+    .stats-title {
+        @apply text-4xl font-semibold text-dark mb-1.5
+    }
+
+    .stats-description {
+        @apply text-xs uppercase text-dark
+    }
+
+    /* Dropdown */
+    .dropdown {
+        @apply absolute top-15 left-0 right-0 bg-white p-12 w-full shadow-md
+    }
+    
+    /* Grids */
+    .grid-2-column {
+        @apply grid grid-cols-2 gap-16
+    }
+
+    .grid-4-column {
+        @apply grid grid-cols-4 gap-12
+    }
+
+    /* Footer */
+    .footer {
+        @apply w-full text-base
     }
 }
