@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="src/output.css">
+        <title>About ISATNET</title>
+    </head>
+
+    <body class="font-inter">
+        <nav class="navbar relative">
+            <div class="navbar-logo">
+                <img src="img/logo-isatnet.svg" alt="Isatnet logo">
+
+                <ul class="navbar-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li class="dropdown-btn flex items-center gap-1.5 group">
+                        <a href="#">Product</a>
+                        <img src="img/icon-arrow-down.svg" alt="Icon arrow down">
+
+                        <section class="dropdown dropdown-menu hidden">
+                            <div class="max-w-6xl mx-auto grid grid-cols-2 gap-16">
+                                <div>
+                                    <p class="card-title">ISATNET at Home</p>
+                                    <a href="product-home.html"><img src="img/card-cover-isatnet-home.jpg" alt="Family smilling"></a>
+                                </div>
+                                <div>
+                                    <p class="card-title">ISATNET Business</p>
+                                    <a href="product-business.html"><img src="img/card-cover-isatnet-business.jpg" alt="Employee meeting"></a>
+                                </div>
+                            </div>
+                        </section>
+                    </li>
+                    <li><a href="projects.html">Projects</a></li>
+                </ul>
+            </div>
+
+            <div class="md:hidden relative">
+                <img src="img/icon-menu.svg" alt="Menu icon" class="dropdown-btn">
+            </div>
+
+            <div class="hidden md:flex items-center gap-5">
+                <a href="#">Contact Us</a>
+                <a href="#" class="button-outlined">Get Started</a>
+
+                <button class="navbar-language">
+                    EN <img src="img/icon-globe.svg" alt="Globe icon" class="bg-secondary p-1 rounded-full">
+                </button>
+            </div>
+        </nav>
+
+        <section class="footer">
+            <!-- Footer Container -->
+            <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 md:justify-items-center py-10 p-5">
+                <!-- Contact & Address -->
+                <div class="mb-10">
+                    <!-- Customer Service -->
+                    <div class="flex items-center gap-5">
+                        <img src="img/icon-customer-service.svg" alt="Icon customer service" class="h-12">
+
+                        <div class="flex flex-col">
+                            <p class="font-semibold text-base text-[#2C2C2C]">Customer Service 24/7</p>
+                            <a href="#" class="text-sm text-[#00C7A8]">Chat on Whatsapp</a>
+                        </div>
+                    </div>
+
+                    <!-- Address -->
+                    <div class="mt-12">
+                        <p class="font-semibold text-base text-[#2C2C2C]">Head Office</p>
+
+                        <div class="flex flex-col gap-2 mt-3">
+                            <div class="flex items-start gap-2">
+                                <img src="img/icon-address.svg" alt="Icon address" class="h-7">
+                                <p class="text-sm text-[#595959]">JI. Daan Mogot I No. 34, Tanjung Duren Utara Grogol, Jakarta Barat</p>
+                            </div>
+
+                            <div class="flex items-center gap-2">
+                                <img src="img/icon-email.svg" alt="Icon email" class="h-7">
+                                <a href="#" class="text-sm text-[#2C2C2C]">sales@isat.net.id</a>
+                            </div>
+
+                            <div class="flex items-center gap-2">
+                                <img src="img/icon-phone.svg" alt="" class="h-7">
+                                <a href="#" class="text-sm text-[#2C2C2C]">+62 856 9229 8777</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Information -->
+                <ul class="flex flex-col gap-3 mb-10">
+                    <li><p class="font-semibold text-base text-[#2C2C2C]">Information</p></li>
+                    <li><a href="#" class="text-sm">Terms & Conditions</a></li>
+                    <li><a href="#" class="text-sm">Privacy Policy</a></li>
+                    <li><a href="#" class="text-sm">Payment Information</a></li>
+                    <li><a href="#" class="text-sm">Career</a></li>
+                </ul>
+
+                <!-- Social Media -->
+                <div>
+                    <p class="font-semibold text-base text-[#2C2C2C] mb-5">Follow Us</p>
+
+                    <div class="flex gap-5">
+                        <img src="img/icon-facebook.svg" alt="" class="h-7">
+                        <img src="img/icon-instagram.svg" alt="" class="h-7">
+                        <img src="img/icon-tikTok.svg" alt="" class="h-7">
+                        <img src="img/icon-linkedin.svg" alt="" class="h-7">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
