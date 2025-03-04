@@ -42,4 +42,52 @@
     .button-primary {
         @apply py-1 px-3 md:py-2 md:px-4 w-fit bg-[linear-gradient(274deg,_#00C7A8_0%,_#88E6B6_100%)] text-white rounded-full flex items-center gap-4
     }
+
+    
+    /* Section */
+    .section-max-w-6xl {
+        @apply max-w-6xl mx-auto mb-16 md:mb-20 p-5
+    }
+
+    .section-max-w-7xl {
+        @apply max-w-7xl mx-auto mb-16 md:mb-20
+    }
+
+    .section-main-title {
+        @apply text-4xl md:text-6xl font-medium whitespace-nowrap mb-4 md:mb-8 text-dark
+    }
+
+    .section-title {
+        @apply text-2xl md:text-3xl font-semibold mb-4 md:mb-8 text-dark
+    }
+
+    .section-content {
+        @apply text-base leading-relaxed mb-10 text-dark
+    }
+
+    /* Stats */
+    .stats-image {
+        @apply h-20 mb-3
+    }
+
+    .stats-title {
+        @apply text-3xl md:text-4xl font-semibold text-dark mb-1.5
+    }
+
+    .stats-description {
+        @apply text-xs uppercase text-dark
+    }
+
+    /* Grids */
+    .grid-2-column {
+        @apply grid grid-cols-1 gap-16 md:grid-cols-2
+    }
+
+    .grid-3-column {
+        @apply grid grid-cols-1 gap-16 md:grid-cols-3
+    }
+
+    .grid-4-column {
+        @apply grid grid-cols-2 gap-12 md:grid-cols-4
+    }
 }
