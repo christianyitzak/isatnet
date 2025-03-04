@@ -1,1 +1,45 @@
 @import 'tailwindcss';
+
+@theme {
+    --color-primary: #00C7A8;
+    --color-secondary: #CFF2EC;
+    --color-dark: #2C2C2C;
+    --color-gray-main: #595959;
+    --color-white-main: #FAFAFA;
+}
+
+@layer components {
+    /* Navigation */
+    .navbar {
+        @apply max-w-6xl mx-auto flex justify-between items-center p-5 text-sm text-gray-main mb-0 md:mb-20
+    }
+
+    .navbar-logo {
+        @apply flex items-center gap-12;
+    }
+
+    .navbar-links {
+        @apply hidden md:flex gap-8;
+    }
+
+    .navbar-language {
+        @apply flex items-center gap-3 border-l-1 border-[#595959cb] pl-3
+    }
+
+    /* Button */
+    .button {
+        @apply py-3 px-10 bg-dark text-white rounded-full inline-block w-full text-center md:w-fit text-sm
+    }
+
+    .button-outlined {
+        @apply py-3 px-7 border-2 border-primary text-primary rounded-full inline-block w-fit text-sm
+    }
+
+    .button-sm {
+        @apply py-2 px-5 bg-dark text-white rounded-full inline-block w-full text-center md:w-fit text-sm mt-2.5
+    }
+
+    .button-primary {
+        @apply py-1 px-3 md:py-2 md:px-4 w-fit bg-[linear-gradient(274deg,_#00C7A8_0%,_#88E6B6_100%)] text-white rounded-full flex items-center gap-4
+    }
+}
