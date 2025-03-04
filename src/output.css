@@ -27,6 +27,7 @@
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
     --leading-relaxed: 1.625;
+    --radius-lg: 0.5rem;
     --default-font-family: var(--font-sans);
     --default-font-feature-settings: var(--font-sans--font-feature-settings);
     --default-font-variation-settings: var(
@@ -43,6 +44,7 @@
     --color-secondary: #CFF2EC;
     --color-dark: #2C2C2C;
     --color-gray-main: #595959;
+    --color-white-main: #FAFAFA;
   }
 }
 @layer base {
@@ -235,6 +237,9 @@
   .items-start {
     align-items: flex-start;
   }
+  .justify-between {
+    justify-content: space-between;
+  }
   .justify-center {
     justify-content: center;
   }
@@ -253,17 +258,29 @@
   .rounded-full {
     border-radius: calc(infinity * 1px);
   }
+  .rounded-lg {
+    border-radius: var(--radius-lg);
+  }
   .bg-secondary {
     background-color: var(--color-secondary);
   }
   .bg-white {
     background-color: var(--color-white);
   }
+  .bg-white-main {
+    background-color: var(--color-white-main);
+  }
   .p-1 {
     padding: calc(var(--spacing) * 1);
   }
   .p-1\.5 {
     padding: calc(var(--spacing) * 1.5);
+  }
+  .p-6 {
+    padding: calc(var(--spacing) * 6);
+  }
+  .py-12 {
+    padding-block: calc(var(--spacing) * 12);
   }
   .text-center {
     text-align: center;
@@ -298,6 +315,11 @@
   .md\:hidden {
     @media (width >= 48rem) {
       display: none;
+    }
+  }
+  .md\:flex-row {
+    @media (width >= 48rem) {
+      flex-direction: row;
     }
   }
 }
