@@ -90,4 +90,9 @@
     .grid-4-column {
         @apply grid grid-cols-2 gap-12 md:grid-cols-4
     }
+
+    /* Footer */
+    .footer {
+        @apply w-full text-base
+    }
 }
