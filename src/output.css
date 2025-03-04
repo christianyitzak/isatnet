@@ -192,9 +192,6 @@
   }
 }
 @layer utilities {
-  .collapse {
-    visibility: collapse;
-  }
   .relative {
     position: relative;
   }
@@ -237,18 +234,6 @@
   .hidden {
     display: none;
   }
-  .inline-block {
-    display: inline-block;
-  }
-  .inline-flex {
-    display: inline-flex;
-  }
-  .list-item {
-    display: list-item;
-  }
-  .table {
-    display: table;
-  }
   .h-7 {
     height: calc(var(--spacing) * 7);
   }
@@ -260,12 +245,6 @@
   }
   .max-w-6xl {
     max-width: var(--container-6xl);
-  }
-  .border-collapse {
-    border-collapse: collapse;
-  }
-  .resize {
-    resize: both;
   }
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -291,9 +270,6 @@
   .justify-items-center {
     justify-items: center;
   }
-  .gap-1 {
-    gap: calc(var(--spacing) * 1);
-  }
   .gap-1\.5 {
     gap: calc(var(--spacing) * 1.5);
   }
@@ -314,10 +290,6 @@
   }
   .rounded-lg {
     border-radius: var(--radius-lg);
-  }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
   }
   .bg-secondary {
     background-color: var(--color-secondary);
@@ -376,16 +348,6 @@
   .text-primary {
     color: var(--color-primary);
   }
-  .uppercase {
-    text-transform: uppercase;
-  }
-  .underline {
-    text-decoration-line: underline;
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
-  }
   .md\:order-1 {
     @media (width >= 48rem) {
       order: 1;
@@ -424,6 +386,11 @@
   .md\:justify-items-center {
     @media (width >= 48rem) {
       justify-items: center;
+    }
+  }
+  .md\:text-center {
+    @media (width >= 48rem) {
+      text-align: center;
     }
   }
 }
@@ -648,16 +615,11 @@
     line-height: var(--tw-leading, var(--text-base--line-height));
   }
 }
-@property --tw-border-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @property --tw-font-weight {
   syntax: "*";
   inherits: false;
 }
-@property --tw-outline-style {
+@property --tw-border-style {
   syntax: "*";
   inherits: false;
   initial-value: solid;
