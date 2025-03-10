@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="src/output.css">
+        <title>ISATNET</title>
+    </head>
+
+    <body class="font-inter">
+        <nav class="navbar relative mb-0">
+            <div class="navbar-logo">
+                <a href="index.html"><img src="src/img/nav-logo-isatnet.svg" alt=""></a>
+
+                <ul class="navbar-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li class="dropdown-btn flex items-center gap-1.5 group">
+                        <button>Product</button>
+                        <img src="src/img/icon-arrow-dropdown.svg" alt="">
+
+                        <section class="dropdown dropdown-menu hidden group-hover:block">
+                            <div class="max-w-6xl mx-auto grid grid-cols-2 gap-16">
+                                <div>
+                                    <p class="card-title">ISATNET at Home</p>
+                                    <a href="product-home.html"><img src="src/img/home-isatnet-home-card.jpg" alt=""></a>
+                                </div>
+                                <div>
+                                    <p class="card-title">ISATNET Business</p>
+                                    <a href="product-business.html"><img src="src/img/home-isatnet-business-card.jpg" alt=""></a>
+                                </div>
+                            </div>
+                        </section>
+                    </li>
+                    <li><a href="projects.html">Projects</a></li>
+                </ul>
+            </div>
+
+            <div class="button-menu md:hidden">
+                <img src="src/img/icon-menu.svg" alt="">
+            </div>
+
+            <div class="hidden md:flex items-center gap-5">
+                <a href="about.html">Contact Us</a>
+                <a href="index.html" class="button-outlined">Get Started</a>
+
+                <button class="navbar-language">
+                    EN <img src="src/img/nav-icon-global-line.svg" alt="" class="bg-secondary p-1 rounded-full">
+                </button>
+            </div>
+        </nav>
+
+        <div class="mobile-dropdown bg-white fixed top-0 left-0 right-0 bottom-0 h-lvh z-50 hidden">
+            <div class="h-full flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between p-5">
+                        <p class="text-2xl font-semibold">Menu</p>
+                        <img src="src/img/icon-close.svg" alt="" class="close-dropdown">
+                    </div>
+
+                    <ul class="flex flex-col p-5 gap-2.5 text-lg font-semibold">
+                        <li><a href="about.html">About</a></li>
+                        <hr class="text-gray-100">
+                        <li><a href="service.html">Service</a></li>
+                        <hr class="text-gray-100">
+                        <li><a href="#">Product</a></li>
+                        <hr class="text-gray-100">
+                        <li><a href="projects.html">Projects</a></li>
+                        <hr class="text-gray-100">
+                        <li>
+                            <a href="forms.html" class="text-sm font-medium">Contact Us</a>
+                            <button class="navbar-language text-sm border-l-0 mt-2.5 font-medium">
+                                EN <img src="src/img/nav-icon-global-line.svg" alt="" class="bg-secondary p-1 rounded-full">
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="p-5 flex justify-center mb-10">
+                    <a href="index.html" class="button bg-primary">Get Started</a>
+                </div>
+            </div>
+        </div>
+
+        <section class="w-full grid grid-cols-2 bg-[#F4F4F4]">
+            <img src="src/img/form-image.png" alt="">
+            <div>
+                <p class="section-main-title">Get In Touch</p>
+                <form action="" class="flex flex-col gap-3.5 max-w-[800px]">
+                    <div>
+                        <input type="text" placeholder="Full Name" class="bg-white py-2 px-4 w-64">
+                        <input type="text" placeholder="Phone Number" class="bg-white py-2 px-4 w-64">
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Email Address" class="bg-white py-2 px-4 w-64">
+                        <input type="text" placeholder="Subject" class="bg-white py-2 px-4 w-64">
+                    </div>
+                    <input type="text" placeholder="Write Message" class="bg-white w-">
+                    <input type="submit" class="button">
+                </form>
+            </div>
+        </section>
+    </body>
+</html>
