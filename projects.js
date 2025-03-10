@@ -22,6 +22,48 @@ const projectsData = [
         year: '2018',
         location: 'Jawa Tengah',
     },
+
+    {
+        name: 'Fiberization Pemalang ± 440 km',
+        desc: 'Build and maintenance fiber optic backbone and lastmile.',
+        year: '2018',
+        location: 'Jawa Tengah',
+    },
+
+    {
+        name: 'Fiberization Kupang ± 180 km',
+        desc: 'Build and maintenance fiber optic backbone and lastmile.',
+        year: '2018',
+        location: 'Nusa Tenggara Timur',
+    },
+
+    {
+        name: 'Fiberization Kendal ± 340 km',
+        desc: 'Build and maintenance fiber optic backbone and lastmile.',
+        year: '2018',
+        location: 'Jawa Tengah',
+    },
+
+    {
+        name: 'Fiberization Pemalang ± 440 km',
+        desc: 'Build and maintenance fiber optic backbone and lastmile.',
+        year: '2018',
+        location: 'Jawa Tengah',
+    },
+
+    {
+        name: 'Fiberization Kendal ± 340 km',
+        desc: 'Build and maintenance fiber optic backbone and lastmile.',
+        year: '2018',
+        location: 'Jawa Tengah',
+    },
+
+    {
+        name: 'Fiberization Pemalang ± 440 km',
+        desc: 'Build and maintenance fiber optic backbone and lastmile.',
+        year: '2018',
+        location: 'Jawa Tengah',
+    },
 ];
 
 projectsData.forEach((data) => {

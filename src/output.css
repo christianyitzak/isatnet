@@ -6,6 +6,15 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-red-300: oklch(0.808 0.114 19.571);
+    --color-red-500: oklch(0.637 0.237 25.331);
+    --color-amber-200: oklch(0.924 0.12 95.746);
+    --color-amber-300: oklch(0.879 0.169 91.605);
+    --color-amber-400: oklch(0.828 0.189 84.429);
+    --color-green-300: oklch(0.871 0.15 154.449);
+    --color-emerald-500: oklch(0.696 0.17 162.48);
+    --color-emerald-600: oklch(0.596 0.145 163.225);
+    --color-blue-300: oklch(0.809 0.105 251.813);
     --color-gray-100: oklch(0.967 0.003 264.542);
     --color-black: #000;
     --color-white: #fff;
@@ -228,6 +237,18 @@
   .order-2 {
     order: 2;
   }
+  .col-span-1 {
+    grid-column: span 1 / span 1;
+  }
+  .col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+  .row-span-1 {
+    grid-row: span 1 / span 1;
+  }
+  .row-span-2 {
+    grid-row: span 2 / span 2;
+  }
   .mx-auto {
     margin-inline: auto;
   }
@@ -278,6 +299,9 @@
   }
   .mb-2\.5 {
     margin-bottom: calc(var(--spacing) * 2.5);
+  }
+  .mb-4 {
+    margin-bottom: calc(var(--spacing) * 4);
   }
   .mb-5 {
     margin-bottom: calc(var(--spacing) * 5);
@@ -371,6 +395,9 @@
   }
   .grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
   .flex-col {
     flex-direction: column;
@@ -472,11 +499,38 @@
   .bg-\[\$\{data\.color\}\] {
     background-color: ${data.color};
   }
+  .bg-amber-200 {
+    background-color: var(--color-amber-200);
+  }
+  .bg-amber-300 {
+    background-color: var(--color-amber-300);
+  }
+  .bg-amber-400 {
+    background-color: var(--color-amber-400);
+  }
+  .bg-blue-300 {
+    background-color: var(--color-blue-300);
+  }
+  .bg-emerald-500 {
+    background-color: var(--color-emerald-500);
+  }
+  .bg-emerald-600 {
+    background-color: var(--color-emerald-600);
+  }
   .bg-gray-100 {
     background-color: var(--color-gray-100);
   }
+  .bg-green-300 {
+    background-color: var(--color-green-300);
+  }
   .bg-primary {
     background-color: var(--color-primary);
+  }
+  .bg-red-300 {
+    background-color: var(--color-red-300);
+  }
+  .bg-red-500 {
+    background-color: var(--color-red-500);
   }
   .bg-secondary {
     background-color: var(--color-secondary);
@@ -645,6 +699,16 @@
   .md\:order-2 {
     @media (width >= 48rem) {
       order: 2;
+    }
+  }
+  .md\:mb-8 {
+    @media (width >= 48rem) {
+      margin-bottom: calc(var(--spacing) * 8);
+    }
+  }
+  .md\:mb-20 {
+    @media (width >= 48rem) {
+      margin-bottom: calc(var(--spacing) * 20);
     }
   }
   .md\:block {
