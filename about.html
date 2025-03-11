@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="src/output.css">
+        <title>About ISATNET</title>
+    </head>
+
+    <body class="text-dark font-[inter]">
+        <nav class="max-w-6xl mx-auto flex justify-between items-center p-5 text-sm text-gray-main mb-0 md:mb-20 z-50 relative">
+            <div class="flex items-center gap-12">
+                <a href="index.html"><img src="src/img/nav-logo-isatnet.svg" alt=""></a>
+
+                <ul class="hidden md:flex gap-8">
+                    <li><a href="index.html" class="hover:text-primary">Home</a></li>
+                    <li><a href="about.html" class="hover:text-primary">About</a></li>
+                    <li><a href="service.html" class="hover:text-primary">Services</a></li>
+                    <li class="dropdown-btn flex items-center gap-1.5">
+                        <button class="hover:text-primary">Product</button>
+                        <img src="src/img/icon-arrow-dropdown.svg" alt="">
+
+                        <section class="dropdown dropdown-menu hidden absolute top-14 left-0 right-0 bg-white p-16 w-full shadow-md -z-20">
+                            <div class="max-w-6xl mx-auto grid grid-cols-2 gap-16">
+                                <div>
+                                    <p class="font-semibold text-lg md:text-xl text-dark mb-2">ISATNET at Home</p>
+                                    <a href="product-home.html"><img src="src/img/home-isatnet-home-card.jpg" alt=""></a>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-lg md:text-xl text-dark mb-2">ISATNET Business</p>
+                                    <a href="product-business.html"><img src="src/img/home-isatnet-business-card.jpg" alt=""></a>
+                                </div>
+                            </div>
+                        </section>
+                    </li>
+                    <li><a href="projects.html" class="hover:text-primary">Projects</a></li>
+                </ul>
+            </div>
+
+            <div class="button-menu md:hidden">
+                <img src="src/img/icon-menu.svg" alt="">
+            </div>
+
+            <div class="hidden md:flex items-center gap-5">
+                <a href="#" class="hover:text-primary">Contact Us</a>
+                <a href="#" class="py-3 px-7 border-2 border-primary text-primary rounded-full inline-block w-fit text-sm">Get Started</a>
+
+                <button class="flex items-center gap-3 border-l-1 border-[#595959cb] pl-3">
+                    EN <img src="src/img/nav-icon-global-line.svg" alt="" class="bg-secondary p-1 rounded-full">
+                </button>
+            </div>
+        </nav>
+
+        <div class="mobile-dropdown bg-white fixed top-0 left-0 right-0 bottom-0 h-lvh z-50 hidden">
+            <div class="h-full flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between p-5">
+                        <p class="text-2xl font-semibold">Menu</p>
+                        <img src="src/img/icon-close.svg" alt="" class="close-dropdown">
+                    </div>
+
+                    <ul class="flex flex-col p-5 gap-2.5 text-lg font-semibold">
+                        <li><a href="about.html">About</a></li>
+                        <hr class="text-gray-100">
+                        <li><a href="service.html">Service</a></li>
+                        <hr class="text-gray-100">
+                        <li><a href="#">Product</a></li>
+                        <hr class="text-gray-100">
+                        <li><a href="projects.html">Projects</a></li>
+                        <hr class="text-gray-100">
+                        <li>
+                            <a href="forms.html" class="text-sm font-medium">Contact Us</a>
+                            <button class="navbar-language text-sm border-l-0 mt-2.5 font-medium">
+                                EN <img src="src/img/nav-icon-global-line.svg" alt="" class="bg-secondary p-1 rounded-full">
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <section class="about w-full mb-16">
+            <div class="max-w-6xl mx-auto mb-16 md:mb-20 p-5 md:text-center">
+                <h2 class="text-3xl md:text-6xl font-medium md:whitespace-nowrap mb-4 md:mb-8 text-dark">About ISATNET</h2>
+                <p class="text-base leading-relaxed mb-10 text-dark">
+                    Founded in 2005, we have over 15 years of experience in providing comprehensive telecommunications 
+                    <span class="md:block">services. Our expertise spans network system integration, broadband ISP solutions, fiber optic backbone </span>
+                    provisioning, nationwide broadband operations, terrestrial and VSAT services, and VoIP provisioning.
+                </p>
+            </div>
+
+            <div class="flex justify-center gap-3.5 items-center overflow-hidden">
+                <img src="src/img/about-slider-02.jpg" alt="" class="h-[300px] opacity-50">
+                <img src="src/img/about-slider-01.jpg" alt="" class="h-[250px] md:h-[500px]">
+                <img src="src/img/about-slider-03.jpg" alt="" class="h-[300px] opacity-50">
+            </div>
+        </section>
+
+        <section class="max-w-6xl mx-auto mb-16 md:mb-20 p-5 text-center">
+            <h3 class="text-2xl md:text-3xl font-semibold mb-4 md:mb-8 text-dark">
+                Throughout our years of operation, we have built a 
+                <span class="md:block">reputation for delivering reliable and high-quality </span>
+                connectivity solutions to a diverse range of customers.
+            </h3>
+        </section>
+
+        <section class="max-w-6xl mx-auto mb-16 md:mb-20 p-5 grid-2-column">
+            <img src="src/img/about-service-section.jpg" alt="" class="w-full">
+
+            <div>
+                <p class="text-2xl md:text-3xl font-semibold mb-4 md:mb-8 text-dark">
+                    Supported by a vast international bandwidth,
+                    we ensure seamless and efficient data transfer
+                    for all our clients
+                </p>
+
+                <p class="text-base leading-relaxed mb-10 text-dark">
+                    Our infrastructure connects subscribers to major global internet backbone providers (Tier-1 providers) through redundant connections, offering unmatched reliability and performance. Whether for business or personal use, our solutions guarantee smooth and dependable connectivity, meeting the growing demands of modern digital environments.
+                </p>
+
+                <a href="service.html" class="py-3 px-10 bg-dark text-white rounded-full inline-block w-full text-center md:w-fit text-sm">See Our Service</a>
+            </div>
+        </section>
+
+        <section class="bg-white-main max-w-7xl mx-auto mb-16 md:mb-20">
+            <div class="max-w-6xl mx-auto mb-16 md:mb-20 p-5">
+                <div class="flex flex-col md:flex-row justify-between mb-10">
+                    <p class="text-2xl md:text-3xl font-semibold mb-4 md:mb-8 text-dark">Lisences</p>
+                    <p class="text-base leading-relaxed mb-10 text-dark">
+                        Nikmati koneksi internet cepat dan stabil tanpa hambatan untuk 
+                        <span class="md:block">kebutuhan keluarga dan bisnis Anda. Jadilah bagian dari solusi digital </span>
+                        terbaik sekarang!
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="flex flex-col justify-center items-center text-center p-5 bg-white rounded-md">
+                        <img src="src/img/icon-license-isp.png" alt="" class="w-32 mt-5">
+                        <p class="font-semibold text-lg md:text-xl text-dark my-5">
+                            Internet Service
+                            <span class="block">Provider (ISP)</span>
+                        </p>
+                    </div>
+
+                    <div class="flex flex-col justify-center items-center text-center p-5 bg-white rounded-md">
+                        <img src="src/img/icon-packet-switch.png" alt="" class="w-32 mt-5">
+                        <p class="font-semibold text-lg md:text-xl text-dark my-5">
+                            Jaringan Tetap Tertutup 
+                            <span class="block">Berbasis Packet Switch</span>
+                        </p>
+                    </div>
+
+                    <div class="flex flex-col justify-center items-center text-center p-5 bg-white rounded-md">
+                        <img src="src/img/icon-fo.png" alt="" class="w-32 mt-3.5">
+                        <p class="font-semibold text-lg md:text-xl text-dark my-5">
+                            Jaringan Tetap Tertutup
+                            <span class="block">(Jartup Fiber Optik)</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="footer">
+            <!-- Footer Container -->
+            <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 md:justify-items-center py-10 p-5">
+                <!-- Contact & Address -->
+                <div class="mb-10">
+                    <!-- Customer Service -->
+                    <div class="flex items-center gap-5">
+                        <img src="src/img/icon-customer-service.svg" alt="" class="h-12">
+
+                        <div class="flex flex-col">
+                            <p class="font-semibold text-base text-[#2C2C2C]">Customer Service 24/7</p>
+                            <a href="#" class="text-sm text-[#00C7A8]">Chat on Whatsapp</a>
+                        </div>
+                    </div>
+
+                    <!-- Address -->
+                    <div class="mt-12">
+                        <p class="font-semibold text-base text-[#2C2C2C]">Head Office</p>
+
+                        <div class="flex flex-col gap-2 mt-3">
+                            <div class="flex items-start gap-2">
+                                <img src="src/img/icon-address.svg" alt="" class="h-7">
+                                <p class="text-sm text-[#595959]">JI. Daan Mogot I No. 34, Tanjung Duren Utara Grogol, Jakarta Barat</p>
+                            </div>
+
+                            <div class="flex items-center gap-2">
+                                <img src="src/img/icon-email.svg" alt="" class="h-7">
+                                <a href="#" class="text-sm text-[#2C2C2C]">sales@isat.net.id</a>
+                            </div>
+
+                            <div class="flex items-center gap-2">
+                                <img src="src/img/icon-phone.svg" alt="" class="h-7">
+                                <a href="#" class="text-sm text-[#2C2C2C]">+62 856 9229 8777</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Information -->
+                <ul class="flex flex-col gap-3 mb-10">
+                    <li><p class="font-semibold text-base text-[#2C2C2C]">Information</p></li>
+                    <li><a href="#" class="text-sm">Terms & Conditions</a></li>
+                    <li><a href="#" class="text-sm">Privacy Policy</a></li>
+                    <li><a href="#" class="text-sm">Payment Information</a></li>
+                    <li><a href="#" class="text-sm">Career</a></li>
+                </ul>
+
+                <!-- Social Media -->
+                <div>
+                    <p class="font-semibold text-base text-[#2C2C2C] mb-5">Follow Us</p>
+
+                    <div class="flex gap-5">
+                        <img src="src/img/icon-facebook.svg" alt="" class="h-7">
+                        <img src="src/img/icon-instagram.svg" alt="" class="h-7">
+                        <img src="src/img/icon-tikTok.svg" alt="" class="h-7">
+                        <img src="src/img/icon-linkedin.svg" alt="" class="h-7">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="script.js"></script>
+    </body>
+</html>
