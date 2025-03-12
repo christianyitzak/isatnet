@@ -95,10 +95,25 @@
 
         <section class="section-max-w-7xl bg-white-main rounded-lg py-12">
             <div class="section-max-w-6xl">
-                <div class="flex justify-between mb-6 items-center">
-                    <p class="text-2xl md:text-3xl font-semibold text-dark">Our Portfolio</p>
-                    <button class="cursor-pointer">All Projects &darr;</button>
+                <div class="flex flex-col md:flex-row justify-between mb-6 md:items-center">
+                    <p class="text-2xl md:text-3xl font-semibold text-dark mb-5">Our Portfolio</p>
+                    <div class="relative">
+                        <button class="project-dropdown flex gap-10 items-center border-2 border-primary py-2 px-3 rounded-full w-fit text-sm text-gray-main">
+                            All Projects <img src="src/img/icon-arrow-dropdown.svg" alt="">
+                        </button>
+
+                        <div class="absolute left-0 bg-white">
+                            <ul class="project-dropdown-menu hidden text-sm text-gray-main rounded-lg">
+                                <li class="p-2 hover:bg-[#E3F7F3] cursor-pointer" onclick="filter('')">All Projects</li>
+                                <li class="p-2 hover:bg-[#E3F7F3] cursor-pointer" onclick="filter('fiber-optic')">Fiber Optic</li>
+                                <li class="p-2 hover:bg-[#E3F7F3] cursor-pointer" onclick="filter('fiber-home')">Fiber to The Home</li>
+                                <li class="p-2 hover:bg-[#E3F7F3] cursor-pointer" onclick="filter('closed-internet')">Closed Internet Network</li>
+                                <li class="p-2 hover:bg-[#E3F7F3] cursor-pointer" onclick="filter('network-monitoring')">Network Monitoring</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
+                
 
                 <div class="projects-grid grid-3-column">
                 </div>
