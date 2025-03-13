@@ -93,30 +93,31 @@
             </div>
         </section>
 
-        <section class="section-max-w-7xl bg-white-main rounded-lg py-12">
-            <div class="section-max-w-6xl">
+        <section class="section-max-w-6xl bg-white-main rounded-lg py-12">
+            <div>
                 <div class="flex flex-col md:flex-row justify-between mb-6 md:items-center">
                     <p class="text-2xl md:text-3xl font-semibold text-dark mb-5">Our Portfolio</p>
-                    <div class="relative">
-                        <button class="project-dropdown flex gap-10 items-center border-2 border-primary py-2 px-3 rounded-full w-fit text-sm text-gray-main">
-                            All Projects <img src="src/img/icon-arrow-dropdown.svg" alt="">
-                        </button>
-
-                        <div class="absolute left-0 bg-white">
-                            <ul class="project-dropdown-menu hidden text-sm text-gray-main rounded-lg">
-                                <li class="p-2 hover:bg-[#E3F7F3] cursor-pointer" onclick="filter('')">All Projects</li>
-                                <li class="p-2 hover:bg-[#E3F7F3] cursor-pointer" onclick="filter('fiber-optic')">Fiber Optic</li>
-                                <li class="p-2 hover:bg-[#E3F7F3] cursor-pointer" onclick="filter('fiber-home')">Fiber to The Home</li>
-                                <li class="p-2 hover:bg-[#E3F7F3] cursor-pointer" onclick="filter('closed-internet')">Closed Internet Network</li>
-                                <li class="p-2 hover:bg-[#E3F7F3] cursor-pointer" onclick="filter('network-monitoring')">Network Monitoring</li>
-                            </ul>
+                    <div class="projects-dropdown-container relative">
+                        <div class="project-dropdown flex items-center gap-5 justify-between py-2 px-3 rounded-full border-2 border-primary w-56 cursor-pointer">
+                            <span class="text-[13px] text-gray-main selected">All Projects</span>
+                            <div>
+                                <img src="src/img/icon-arrow-dropdown.svg" alt="">
+                            </div>
                         </div>
+                        
+                        <ul class="project-dropdown-menu absolute bg-white text-[13px] w-56 px-1 py-1 text-gray-main rounded-2xl shadow-lg hidden">
+                            <li class="px-2 py-2 cursor-pointer hover:bg-secondary rounded-lg" data-menu="all">All Projects</li>
+                            <li class="px-2 py-2 cursor-pointer hover:bg-secondary rounded-lg" data-menu="fiber-optic">Fiber Optic</li>
+                            <li class="px-2 py-2 cursor-pointer hover:bg-secondary rounded-lg" data-menu="fiber-home">Fiber to The Home</li>
+                            <li class="px-2 py-2 cursor-pointer hover:bg-secondary rounded-lg" data-menu="closed-internet">Closed Internet Network</li>
+                            <li class="px-2 py-2 cursor-pointer hover:bg-secondary rounded-lg" data-menu="network-monitoring">Network Monitoring</li>
+                        </ul>
                     </div>
                 </div>
-                
-
-                <div class="projects-grid grid-3-column">
-                </div>
+            </div>
+            
+            
+            <div class="projects-grid grid grid-cols-1 gap-5 md:grid-cols-3">
             </div>
         </section>
 

@@ -102,7 +102,7 @@ function filter(value) {
     projectCards = '';
     
     projectsData.forEach((project) => {
-        if (!value) {
+        if (value === 'all') {
             projectCards += `
             <div class="bg-white rounded-lg p-5">
                 <img src="${project.img}" alt="">
@@ -112,8 +112,7 @@ function filter(value) {
                 <p class="text-[#999999] text-xs">${project.year} | ${project.location}</p>
             </div>
             `
-
-            projectGrids.innerHTML = projectCards; 
+            projectGrids.innerHTML = projectCards;
         }        
 
         else if (project.id === value) {
@@ -131,3 +130,16 @@ function filter(value) {
         }
     })
 }
+
+const dropdowns = document.querySelectorAll('.projects-dropdown-container');
+
+document.querySelectorAll('.project-dropdown-menu li')
+.forEach(project => {
+    project.addEventListener('click', () => {
+        const data = String(project.dataset.menu);
+        
+        filter(data);
+
+        document.querySelector('.selected').textContent = project.textContent;
+    })
+})
