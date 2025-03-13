@@ -55,21 +55,21 @@ pricingData.forEach((data) => {
             <p class="font-semibold mb-2.5">${data.name}</p>
             <div class="flex flex-row md:flex-col gap-3.5">
                 <div>
-                    <p class="text-4xl font-bold">${data.speed} <span class="text-sm font-normal">Mbps</span></p>
+                    <p class="text-4xl font-bold mb-2.5">${data.speed} <span class="text-sm font-normal">Mbps</span></p>
                     <p class="text-sm">Rp${data.price}/month</p>
                 </div>
 
                 <hr class="hidden md:block">
 
-                <div class="flex flex-col justify-between border-l-1 border-black md:border-none pl-2.5 md:pl-0">
-                    <div class="flex items-center gap-1 md:gap-0">
+                <div class="flex flex-col justify-between border-l-1 border-black md:border-none pl-2 md:pl-0">
+                    <div class="flex items-center gap-1 md:gap-2 text-xs">
                         <img src="src/img/icon-checkbox.svg" alt="">
-                        <p class="text-sm font-medium">Free installation</p>
+                        <p class="font-medium">Free installation</p>
                     </div>
 
-                    <div class="flex items-center gap-1 md:gap-0">
+                    <div class="flex items-center gap-1 md:gap-2 text-xs">
                         <img src="src/img/icon-checkbox.svg" alt="">
-                        <p class="text-sm font-medium">
+                        <p class="font-medium">
                         Broadband 
                         Internet Service
                         </p>
