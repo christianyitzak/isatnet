@@ -62,14 +62,14 @@ pricingData.forEach((data) => {
                 <hr class="hidden md:block">
 
                 <div class="flex flex-col justify-between border-l-1 border-black md:border-none pl-2 md:pl-0">
-                    <div class="flex items-center gap-1 md:gap-2 text-xs">
+                    <div class="flex items-center gap-1 md:gap-2">
                         <img src="src/img/icon-checkbox.svg" alt="">
-                        <p class="font-medium">Free installation</p>
+                        <p class="text-xs font-medium">Free installation</p>
                     </div>
 
-                    <div class="flex items-center gap-1 md:gap-2 text-xs">
+                    <div class="flex items-center gap-1 md:gap-2">
                         <img src="src/img/icon-checkbox.svg" alt="">
-                        <p class="font-medium">
+                        <p class="font-medium text-xs">
                         Broadband 
                         Internet Service
                         </p>

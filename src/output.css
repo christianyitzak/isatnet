@@ -557,6 +557,9 @@
   .bg-\[\$\{data\.color\}\] {
     background-color: ${data.color};
   }
+  .bg-\[\(\$\{data\.color\}\)\] {
+    background-color: (${data.color});
+  }
   .bg-dark {
     background-color: var(--color-dark);
   }
@@ -571,6 +574,9 @@
   }
   .bg-white-main {
     background-color: var(--color-white-main);
+  }
+  .bg-\[linear-gradient\(180deg\,_\#88E6B6_0\%\,_\#0AB65E_100\%\)\] {
+    background-image: linear-gradient(180deg, #88E6B6 0%, #0AB65E 100%);
   }
   .bg-\[linear-gradient\(274deg\,_\#00C7A8_0\%\,_\#88E6B6_100\%\)\] {
     background-image: linear-gradient(274deg, #00C7A8 0%, #88E6B6 100%);
