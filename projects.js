@@ -113,6 +113,7 @@ function filter(value) {
             </div>
             `
             projectGrids.innerHTML = projectCards;
+            document.querySelector('.project-dropdown-menu').classList.add('hidden');
         }        
 
         else if (project.id === value) {
@@ -127,7 +128,9 @@ function filter(value) {
             `
 
             projectGrids.innerHTML = projectCards;
+            document.querySelector('.project-dropdown-menu').classList.add('hidden');
         }
+        
     })
 }
 
@@ -141,5 +144,6 @@ document.querySelectorAll('.project-dropdown-menu li')
         filter(data);
 
         document.querySelector('.selected').textContent = project.textContent;
+
     })
 })
