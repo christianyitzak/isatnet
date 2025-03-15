@@ -9,32 +9,25 @@
         <link rel="stylesheet" href="src/output.css">
         <title>ISATNET Service</title>
     </head>
-    <body class="text-dark font-[inter]">
-        <!-- Navigations -->
+    <body class="text-dark font-inter">
         <nav class="max-w-6xl mx-auto flex justify-between items-center p-5 text-sm text-gray-main mb-0 md:mb-14 relative">
-            <!-- Dekstop Navigation (Left) -->
-            <div class="flex items-center gap-12">
-                <a href="index.html"><img src="src/img/nav-logo-isatnet.svg" alt=""></a>
+            <div class="flex items-center gap-10">
+                <a href="index.html"><img src="src/img/logo-isatnet.svg" alt="Isatnet logo"></a>
 
                 <ul class="hidden md:flex gap-8">
                     <li><a href="index.html" class="hover:text-primary">Home</a></li>
                     <li><a href="about.html" class="hover:text-primary">About</a></li>
                     <li><a href="service.html" class="hover:text-primary">Services</a></li>
-                    
-                    <!-- Product Dropdown -->
-                    <li class="dropdown-btn flex items-center gap-1.5">
-                        <button class="hover:text-primary">Product</button>
-                        <img src="src/img/icon-arrow-dropdown.svg" alt="Arrow down icon">
+                    <li>
+                        <button class="dropdown-button flex items-center gap-2 hover:text-primary cursor-pointer">Products <img src="src/img/icons/icon-dropdown.svg" alt="Dropdown icon"></button>
 
-                        <div class="dropdown dropdown-menu hidden absolute top-14 left-0 right-0 bg-white p-16 shadow-md">
+                        <div class="dropdown-menu hidden absolute top-20 left-0 right-0 bg-white p-10 shadow-lg">
                             <div class="grid grid-cols-2 gap-16">
-                                <div>
-                                    <p class="font-semibold text-lg text-dark mb-2">ISATNET at Home</p>
-                                    <a href="product-home.html"><img src="src/img/home-isatnet-home-card.jpg" alt=""></a>
+                                <div class="shadow-lg hover:opacity-90 active:opacity-85">
+                                    <a href="product-home.html"><img src="src/img/cards/card-isatnet-home.png" alt="Family smilling" class="rounded-lg"></a>
                                 </div>
-                                <div>
-                                    <p class="font-semibold text-lg text-dark mb-2">ISATNET Business</p>
-                                    <a href="product-business.html"><img src="src/img/home-isatnet-business-card.jpg" alt=""></a>
+                                <div class="shadow-lg hover:opacity-90 active:opacity-85">
+                                    <a href="product-business.html"><img src="src/img/cards/card-isatnet-business.png" alt="Worker meeting" class="rounded-lg"></a>
                                 </div>
                             </div>
                         </div>
@@ -43,29 +36,27 @@
                 </ul>
             </div>
             
-            <!-- Dekstop Navigation (Right) -->
-            <ul class="hidden md:flex items-center gap-5">
+            <ul class="hidden md:flex items-center gap-8">
                 <li>
-                    <a href="#" class="py-3 px-7 border-2 border-primary text-primary rounded-full inline-block w-fit text-sm">Get Started</a>
+                    <a href="#" class="py-3 px-7 text-primary border-2 border-primary rounded-full inline-block w-fit text-sm hover:opacity-75 active:opacity-70">Get Started</a>
                 </li>
                 <li class="flex items-center gap-2.5">
-                    <button class="flex items-center gap-3 border-l-1 border-[#595959cb] pl-3">EN</button>
-                    <img src="src/img/nav-icon-global-line.svg" alt="" class="bg-secondary p-1 rounded-full">
+                    <button class="flex items-center gap-3 border-l-2 border-[#59595957] pl-3">EN</button>
+                    <img src="src/img/icons/icon-globe.svg" alt="Icon globe" class="bg-secondary p-1 rounded-full">
                 </li>
             </ul>
 
-            <!-- Mobile Navigation -->
             <div class="md:hidden">
-                <img src="src/img/icon-menu.svg" alt="" class="button-menu">
+                <img src="src/img/icons/icon-hamburger-menu.svg" alt="Icon hamburger menu" class="mobile-dropdown-button">
 
                 <!-- Navigation Menu Container -->
-                <div class="mobile-dropdown bg-white fixed top-0 left-0 right-0 bottom-0 h-lvh z-50 hidden">
+                <div class="mobile-dropdown-menu bg-white fixed top-0 left-0 right-0 bottom-0 h-lvh z-50 hidden">
                     
                     <!-- Navigation Menu -->
                     <div class="h-full flex flex-col">
                         <div class="flex justify-between p-5">
                             <p class="text-2xl font-semibold">Menu</p>
-                            <img src="src/img/icon-close.svg" alt="" class="close-dropdown">
+                            <img src="src/img/icons/icon-close.svg" alt="Icon close" class="mobile-dropdown-close">
                         </div>
         
                         <ul class="flex flex-col p-5 gap-2.5 text-lg font-semibold">
@@ -79,13 +70,13 @@
                             
                             <li class="border-b-2 border-gray-100 py-2">
                                 <div class="flex items-center gap-2.5">
-                                    <span href="#">Products</span>
-                                    <img src="src/img/icon-arrow-dropdown.svg" alt="">
+                                    <span>Products</span>
+                                    <img src="src/img/icons/icon-dropdown.svg" alt="Icon dropdown">
                                 </div>
 
                                 <div class="flex flex-col text-sm font-medium pl-3.5">
-                                    <a href="product-home.html" class="py-2.5 border-b-2 border-gray-100">ISATNET at Home</a>
-                                    <a href="product-business.html" class="py-2.5">ISATNET Business</a>
+                                    <a href="product-home.html" class="py-3 border-b-2 border-gray-100">ISATNET at Home</a>
+                                    <a href="product-business.html" class="py-3">ISATNET Business</a>
                                 </div>
                             </li>
                             
@@ -93,9 +84,9 @@
                                 <a href="projects.html">Projects</a>
                             </li>
                             
-                            <li class="flex items-center gap-1">
-                                <img src="src/img/nav-icon-global-line.svg" alt="" class="bg-secondary p-0.5 rounded-full">
-                                <button class="navbar-language text-sm border-l-0font-medium">EN</button>
+                            <li class="flex items-center gap-2.5">
+                                <img src="src/img/icons/icon-globe.svg" alt="Icon globe" class="bg-secondary p-1 rounded-full">
+                                <button class="text-sm border-l-0 font-medium">EN</button>
                             </li>
                         </ul>
                     </div>
@@ -103,25 +94,23 @@
             </div>
         </nav>
 
-        <section class="max-w-6xl mx-auto mb-16 md:mb-20 p-5 grid-2-column">
-            <img src="src/img/project-hero.jpg" alt="" class="w-full">
+        <section class="max-w-6xl mx-auto p-5 grid grid-cols-1 gap-10 md:grid-cols-2">
+            <img src="src/img/project-banner.jpg" alt="Isatnet workers" class="w-full">
             <div>
-                <p class="text-3xl md:text-5xl font-semibold mb-4 md:mb-8 text-dark">
-                    Projects
-                </p>
+                <p class="text-4xl md:text-5xl font-bold mb-5">Projects</p>
 
-                <p class="md:text-lg leading-relaxed text-dark">
+                <p class="leading-relaxed mb-10">
                     Follow our portfolio journey to discover how ISATNET has successfully delivered customized network solutions, data center services, and reliable connectivity for diverse industries.
                 </p>
             </div>
         </section>
-
+        
         <section class="max-w-6xl mx-auto mb-16 md:mb-20 p-5 bg-white-main rounded-lg py-12">
             <div>
                 <div class="flex flex-col md:flex-row justify-between mb-6 md:items-center">
                     <p class="text-2xl md:text-3xl font-semibold text-dark mb-5">Our Portfolio</p>
-                    <div class="projects-dropdown-container relative">
-                        <div class="project-dropdown flex items-center gap-5 justify-between py-2 px-3 rounded-full border-2 border-primary w-56 cursor-pointer">
+                    <div class="project-dropdown-container relative">
+                        <div class="project-dropdown flex items-center gap-5 justify-between py-2 px-3 rounded-full border-2 border-primary w-56 cursor-pointer hover:opacity-80">
                             <span class="text-[13px] text-gray-main selected">All Projects</span>
                             <div>
                                 <img src="src/img/icon-arrow-dropdown.svg" alt="">
@@ -144,10 +133,10 @@
             </div>
         </section>
 
-        <section class="max-w-6xl mx-auto mb-16 md:mb-20 p-5">
-            <p class="text-2xl md:text-3xl font-semibold mb-4 md:mb-8 text-dark">Documentation</p>
+        <section class="max-w-6xl mx-auto mb-20 p-5">
+            <p class="text-3xl font-semibold mb-8">Documentation</p>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-5">
                 <img src="src/img/project-01.png" alt="" class="row-span-2">
                 <img src="src/img/project-02.png" alt="" class="row-span-2">
                 <img src="src/img/project-03.png" alt="" class="row-span-1">
@@ -160,68 +149,59 @@
             </div>
         </section>
 
-        <section class="footer">
-            <!-- Footer Container -->
-            <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 md:justify-items-center py-10 p-5">
-                <!-- Contact & Address -->
+        <footer>
+            <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 md:justify-items-center p-5">
                 <div class="mb-10">
-                    <!-- Customer Service -->
-                    <div class="flex items-center gap-5">
-                        <img src="src/img/icon-customer-service.svg" alt="" class="h-12">
+                    <div class="flex items-center gap-5 mb-10">
+                        <img src="src/img/icons/icon-customer-service.svg" alt="Customer service icon" class="h-12">
 
                         <div class="flex flex-col">
-                            <p class="font-semibold text-base text-[#2C2C2C]">Customer Service 24/7</p>
-                            <a href="#" class="text-sm text-[#00C7A8]">Chat on Whatsapp</a>
+                            <p class="font-semibold">Customer Service 24/7</p>
+                            <a href="#" class="text-sm text-primary hover:opacity-75 active:opacity-70">Chat on Whatsapp</a>
                         </div>
                     </div>
 
-                    <!-- Address -->
-                    <div class="mt-12">
-                        <p class="font-semibold text-base text-[#2C2C2C]">Head Office</p>
+                    <div>
+                        <p class="font-semibold mb-5">Head Office</p>
 
-                        <div class="flex flex-col gap-2 mt-3">
+                        <div class="flex flex-col gap-2 text-sm text-gray-main">
                             <div class="flex items-start gap-2">
-                                <img src="src/img/icon-address.svg" alt="" class="h-7">
-                                <p class="text-sm text-[#595959]">JI. Daan Mogot I No. 34, Tanjung Duren Utara Grogol, Jakarta Barat</p>
+                                <img src="src/img/icon-address.svg" alt="Address pin icon" class="h-7">
+                                <p>JI. Daan Mogot I No. 34, Tanjung Duren Utara Grogol, Jakarta Barat</p>
                             </div>
 
                             <div class="flex items-center gap-2">
-                                <img src="src/img/icon-email.svg" alt="" class="h-7">
-                                <a href="#" class="text-sm text-[#2C2C2C]">sales@isat.net.id</a>
+                                <img src="src/img/icon-email.svg" alt="Email icon" class="h-7">
+                                <a href="#" class="hover:text-primary active:opacity-70">sales@isat.net.id</a>
                             </div>
 
                             <div class="flex items-center gap-2">
-                                <img src="src/img/icon-phone.svg" alt="" class="h-7">
-                                <a href="#" class="text-sm text-[#2C2C2C]">+62 856 9229 8777</a>
+                                <img src="src/img/icon-phone.svg" alt="Phone icon" class="h-7">
+                                <a href="#" class="hover:text-primary active:opacity-70">+62 856 9229 8777</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Information -->
-                <ul class="flex flex-col gap-3 mb-10">
-                    <li><p class="font-semibold text-base text-[#2C2C2C]">Information</p></li>
-                    <li><a href="#" class="text-sm">Terms & Conditions</a></li>
-                    <li><a href="#" class="text-sm">Privacy Policy</a></li>
-                    <li><a href="#" class="text-sm">Payment Information</a></li>
-                    <li><a href="#" class="text-sm">Career</a></li>
+                <ul class="flex flex-col gap-5 mb-10 text-sm">
+                    <li><p class="font-semibold text-base">Information</p></li>
+                    <li><a href="#" class="hover:text-primary">Terms & Conditions</a></li>
+                    <li><a href="#" class="hover:text-primary">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:text-primary">Payment Information</a></li>
+                    <li><a href="#" class="hover:text-primary">Career</a></li>
                 </ul>
 
-                <!-- Social Media -->
                 <div>
-                    <p class="font-semibold text-base text-[#2C2C2C] mb-5">Follow Us</p>
+                    <p class="font-semibold mb-5">Follow Us</p>
 
                     <div class="flex gap-5">
-                        <img src="src/img/icon-facebook.svg" alt="" class="h-7">
-                        <img src="src/img/icon-instagram.svg" alt="" class="h-7">
-                        <img src="src/img/icon-tikTok.svg" alt="" class="h-7">
-                        <img src="src/img/icon-linkedin.svg" alt="" class="h-7">
+                        <a href="#"><img src="src/img/icons/icon-instagram.svg" alt="Instagram icon" class="h-7"></a>
                     </div>
                 </div>
             </div>
-        </section>
+        </footer>
 
-        <script src="script.js"></script>
-        <script src="projects.js"></script>
+        <script src="scripts/main.js"></script>
+        <script src="scripts/project.js" type="module"></script>
     </body>
 </html>

@@ -1,34 +1,9 @@
-let pricingCards = '';
-const pricingGrids = document.querySelector('.pricing-grid');
+import { pricingData } from "../data/pricing-home.js";
 
-const pricingData = [
-    {
-        color: 'white',
-        name: 'Silver',
-        speed: 30,
-        price: '300.000',
-        device: 10,
-    },
-    
-    {
-        color: 'linear-gradient(180deg, #FFCDBC 0%, #F37248 100%)',
-        name: 'Gold',
-        speed: 50,
-        price: '600.000',
-        device: 20,
-    },
-
-    {
-        color: 'linear-gradient(180deg, #88E6B6 0%, #0AB65E 100%)',
-        name: 'Platinum',
-        speed: 100,
-        price: '800.000',
-        device: 30,
-    },
-];
+let pricingHTML = '';
 
 pricingData.forEach((data) => {
-    pricingCards += `
+    pricingHTML += `
         <div class="rounded-lg p-5 shadow-lg" style="background: ${data.color}">
             <p class="font-semibold mb-2.5">${data.name}</p>
             <div class="flex flex-row md:flex-col gap-3.5">
@@ -55,4 +30,4 @@ pricingData.forEach((data) => {
     `
 })
 
-pricingGrids.innerHTML = pricingCards;
+document.querySelector('.pricing-grid').innerHTML = pricingHTML;

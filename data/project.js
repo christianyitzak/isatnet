@@ -1,7 +1,4 @@
-let projectCards = '';
-const projectGrids = document.querySelector('.projects-grid');
-
-const projectsData = [
+export const projectsData = [
     {
         id: 'fiber-optic',
         img: 'src/img/projects/tree.svg',
@@ -83,67 +80,3 @@ const projectsData = [
         location: 'Batam',
     },
 ];
-
-projectsData.forEach((data) => {
-    projectCards += `
-        <div class="bg-white rounded-lg p-5">
-            <img src="${data.img}" alt="">
-            <p class="text-base font-bold my-1.5">${data.name}</p>
-            <p class="text-[#999999] text-sm h-16">${data.desc}</p>
-            <hr class="text-[#59595949] my-3">
-            <p class="text-[#999999] text-xs">${data.year} | ${data.location}</p>
-        </div>
-    `
-})
-
-projectGrids.innerHTML = projectCards;
-
-function filter(value) {
-    projectCards = '';
-    
-    projectsData.forEach((project) => {
-        if (value === 'all') {
-            projectCards += `
-            <div class="bg-white rounded-lg p-5">
-                <img src="${project.img}" alt="">
-                <p class="text-base font-bold my-1.5">${project.name}</p>
-                <p class="text-[#999999] text-sm h-16">${project.desc}</p>
-                <hr class="text-[#59595949] my-3">
-                <p class="text-[#999999] text-xs">${project.year} | ${project.location}</p>
-            </div>
-            `
-            projectGrids.innerHTML = projectCards;
-            document.querySelector('.project-dropdown-menu').classList.add('hidden');
-        }        
-
-        else if (project.id === value) {
-            projectCards += `
-            <div class="bg-white rounded-lg p-5">
-                <img src="${project.img}" alt="">
-                <p class="text-base font-bold my-1.5">${project.name}</p>
-                <p class="text-[#999999] text-sm h-16">${project.desc}</p>
-                <hr class="text-[#59595949] my-3">
-                <p class="text-[#999999] text-xs">${project.year} | ${project.location}</p>
-            </div>
-            `
-
-            projectGrids.innerHTML = projectCards;
-            document.querySelector('.project-dropdown-menu').classList.add('hidden');
-        }
-        
-    })
-}
-
-const dropdowns = document.querySelectorAll('.projects-dropdown-container');
-
-document.querySelectorAll('.project-dropdown-menu li')
-.forEach(project => {
-    project.addEventListener('click', () => {
-        const data = String(project.dataset.menu);
-        
-        filter(data);
-
-        document.querySelector('.selected').textContent = project.textContent;
-
-    })
-})
